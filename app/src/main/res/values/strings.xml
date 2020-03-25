@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AppBarLayoutDemo</string>
+    <string name="demo_txt">CoordinatorLayout顾名思义，协调者布局。所谓的协调者布局，它主要是协调谁，协调啥呢？我相信大家在学这个布局时，都会思考这两个问题。其实说的简单点，协调者布局主要协调child之间的联动。请注意我的措辞，child之间的联动。
+  可能有的同学对联动还是有点陌生，我简单的举一个例子，比如说，我们在滑动一个RecyclerView,存在一个View需要在RecyclerView滑动时做相应的动作，例如，位移变化，缩放变化等等。我相信这种场景还是非常常见的吧。这种场景就可以称之为child之间联动。
+  而CoordinatorLayout是怎么进行协调呢？主要依靠一个插件--Behavior。在CoordinatorLayout内部，每个child都必须带一个Behavior（其实不携带也行，不携带就不能被协调），CoordinatorLayout就根据每个child所携带的Behavior信息进行协调。
+  这里还需要提一句的是，Behavior不仅仅协助联动，而且还是接管了child的三大流程，有点类似于RecyclerView的LayoutManager。
+  而Behavior是怎么进行协助联动呢？这就涉及到嵌套滑动的相关知识，总的来说，Behavior包括整个CoordinatorLayout体系就是对嵌套滑动的应用和实现。所以，我们便知道了，嵌套滑动到底有多么重要了。
+
+作者：琼珶和予
+链接：https://www.jianshu.com/p/eec5a397ce79
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</string>
+</resources>
