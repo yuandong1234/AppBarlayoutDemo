@@ -9,7 +9,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class CustomToolBarActivity extends AppCompatActivity {
     private AppBarLayout appBarLayout;
     //    private Toolbar toolbar;
     private CommonToolBar toolbar;
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(option);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         getWindow().setStatusBarColor(Color.TRANSPARENT);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_custom_toolbar);
         initView();
     }
 
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 //        toolbar.addView(view, lps);
 //
 //        CollapsingToolbarLayout.LayoutParams layoutParams = (CollapsingToolbarLayout.LayoutParams) toolbar.getLayoutParams();
-//        layoutParams.topMargin = StatusBarUtil.getStatusBarHeight(MainActivity.this);
+//        layoutParams.topMargin = StatusBarUtil.getStatusBarHeight(CustomToolBarActivity.this);
 //        toolbar.setLayoutParams(layoutParams);
 //
 //        appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 //                toolbar.setAlpha(alpha);
 //                ivBack.setAlpha(alpha);
 //                tvTitle.setAlpha(alpha);
-//                StatusBarUtil.setStatusBarColor(MainActivity.this,
+//                StatusBarUtil.setStatusBarColor(CustomToolBarActivity.this,
 //                        ColorUtil.changeAlpha(getResources().getColor(R.color.color_ffffff), alpha));
 //            }
 //        });
